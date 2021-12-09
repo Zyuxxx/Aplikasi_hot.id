@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detail_gambar_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/detail_gambar_hotel"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/ivDetailHotel"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentStart="true"
+                                        android:background="@drawable/bg_circle_radius_primary"
+                                        android:padding="10dp"
+                                        android:src="@drawable/ic_dtl_hotel"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                                        app:tint="@android:color/white" />
+
+                                    <TextView
+                                        android:id="@+id/detail_nama_hotel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="20dp"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                                        android:textStyle="bold"
+                                        tools:text="Nama Hotel"
+                                        android:layout_toEndOf="@+id/ivDetailHotel"
+                                        android:textSize="14sp" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/ivAddressHotel"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentStart="true"
+                                        android:background="@drawable/bg_circle_radius_primary"
+                                        android:padding="10dp"
+                                        android:src="@drawable/ic_dtl_loc"
+                                        app:tint="@android:color/white"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+                                    <TextView
+                                        android:id="@+id/detail_alamat_hotel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_toEndOf="@+id/ivAddressHotel"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                                        android:textSize="14sp"
+                                        tools:text="jfdkhkdshfkjdshf" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/ivPhoneHotel"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentStart="true"
+                                        android:background="@drawable/bg_circle_radius_primary"
+                                        android:padding="10dp"
+                                        android:src="@drawable/ic_dtl_phone"
+                                        app:tint="@android:color/white"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+                                    <TextView
+                                        android:id="@+id/detail_nomor_telepon"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        tools:text="081234567"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_toEndOf="@+id/ivPhoneHotel"
+                                        android:textSize="14sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
